@@ -8,6 +8,8 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
+        - name: checkout code
+          uses: actions/checkout@v2
         - name: show python version
           run: python --version
         - name: install required dependencies
