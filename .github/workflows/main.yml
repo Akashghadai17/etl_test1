@@ -23,5 +23,5 @@ jobs:
         needs: build
         steps:
         - name: print message
-          run: echo 'deployement-successFull'
+          run: echo 'deployement successFull'
         
