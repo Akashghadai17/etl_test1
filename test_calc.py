@@ -4,10 +4,10 @@ def test_add():
     assert add(10,20) == 30
 
 def test_sub():
-    assert add(20, 10) == 10
+    assert sub(20, 10) == 10
 
 def test_mul():
-    assert add(5,2) == 10
+    assert test_mul(5,2) == 10
 
 def test_div():
-    assert add(10,2) == 5
+    assert div(10,2) == 5
