@@ -29,6 +29,10 @@ jobs:
         with:
           name: html-coverage-report
           path: htmlcov/
+      - name: Run python script with secret 
+        env: 
+          MY_DB_USERNAME: ${{secrets.DB_USERNAME}}
+        run: python test.py
 
   deploy:
     runs-on: ubuntu-latest

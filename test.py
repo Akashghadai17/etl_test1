@@ -1,8 +1,3 @@
-import pandas as pd 
-data={
-    "name":["A","B"],
-    "age":[10,20]
-}
-df=pd.DataFrame(data)
-print(df)
-#Table
+import os
+DB_USERNAME_SECRET=os.getenv("MY_DB_USERNAME")
+print("USERNAME: ",DB_USERNAME_SECRET)
